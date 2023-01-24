@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CDN BOOTSTRAP -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!--google font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/mobile.css">
+      <title>Visite</title>
+   </head>
+   <body class="bg-dark">
+      <!--HEADER-->
+      <div class="container-fluid d-none d-xl-block" id="header-top">
+         <div class="container">
+            <ul class="nav justify-content-end">
+               <li class="nav-item">
+                  <button   class="button nav-link link-top" href="#" id="click-tamanho-fonte">
+                  <img src="assets/img/tamanho-fonte.png" alt="">
+                  Tamanho da fonte
+                  </button>
+               </li>
+               <li class="nav-item">
+                  <a href="acessibilidade.html" class="button nav-link link-top" href="#" id="link-top-acessibilidade">
+                  <img src="assets/img/acessibility.png" alt="">
+                  Acessibilidade
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <button id="toggle" class="button nav-link link-top " href="#">
+                  <img src="assets/img/iconcontrast.png" alt="">
+                  Alto Contraste
+                  </button>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <header class="container-fluid" id="header">
+         <div class="container">
+            <!--navbar as a link-->
+            <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light">
+               <div class="container">
+                  <a class="navbar-brand" href="index.html" id="brand_name">
+                  <img src="assets/img/logo.jpg" alt="logo">
+                  </a>
+                  <!--toggle_button-->
+                  <button class="navbar-toggler" id="navbar-button" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navLinks" aria-controls="navbarNav" aria-expanded="false"
+                     aria-label="Toggle navigation"  >
+                     <input class="menu-trigger hidden" id="togglenav" type="checkbox"/>
+                     <label class="burger-wrapper" for="togglenav">
+                        <div class="hamburger"></div>
+                     </label>
+                  </button>
+                  <!--navbar options/buttons-->
+                  <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+                     <div class="navbar-nav menu-mobile">
+                        <a class="nav-link menu-top" id="menutopvisite"  aria-current="page" href="">Visite</a>
+                        <a class="nav-link menu-top" id="menu-top-sobre" href="#">Programação</a>
+                        <a class="nav-link menu-top" id="menu-top-perguntas" href="">Exposição</a>
+                        <a class="nav-link menu-top" id="menu-top-contato" href="">Sabina Virtual</a>
+                        <!--somente no mobile-->
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Agendamento de Grupos</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Sobre</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Perguntas frequentes</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Contato</a>
+                        <button class="nav-link menu-icon-menu" href="" id="click-menu-pesquisa"><i class="bi bi-search"></i></button>
+                        <button class="nav-link menu-icon-menu d-none d-xl-block" href="" id="click-menu-hamburguer"><i class="bi bi-list"></i></button>
+                        <a class="btn btn-primary btn-ticket" href="#" role="button">
+                        Ingressos <i class="bi bi-ticket"></i>
+                        </a>
+                        <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" href="" > <img src="assets/img/tamanho-fonte.png" alt=""> Tamanho de fonte</button>
+                        <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" href="" > <img src="assets/img/acessibility.png" alt=""> Acessibilidade</button>
+                        <button  id="toggle-mobile" class="button nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" > <img src="assets/img/iconcontrast.png" alt=""> Alto Contraste</button>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!--TAMANHO DA FONTE-->
+      <div class="container-fluid" id="tamanho-fonte">
+         <div class="container">
+            <div class="row">
+               <div class="col-2"></div>
+               <div class="col-8" id="tamanho-fonte-content">
+                  <div class="row  ">
+                     <div class="col-4">
+                        <img src="http://via.placeholder.com/250x500" style="border-radius: 20px; margin-left: -20px ;">
+                     </div>
+                     <div class="col-8">
+                        <h2>Aumentar e Diminuir</h2>
+                        <p class="paragrafo--aumentar-fonte">
+                           Para aumentar ou diminuir a fonte no nosso site,<br>
+                           utilize os seguinte atalhos no seu teclado:
+                        </p>
+                        <div class="paragrafo--aumentar-fonte">
+                           <span class="caixa-tamanho-fonte">Ctrl</span> <span class="caixa-tamanho-fonte">+</span> (Para aumentar)
+                        </div>
+                        <div class="paragrafo--aumentar-fonte">
+                           <span class="caixa-tamanho-fonte">Ctrl</span> <span class="caixa-tamanho-fonte">-</span> (Para diminuir)
+                        </div>
+                        <button class="btn-tamanho-fonte" id="fechar-tamanho-fonte">
+                        FECHAR JANELA
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-2"></div>
+            </div>
+         </div>
+      </div>
+      <!--PESQUISA-->
+      <div class="container-fluid" id="menu-pesquisa">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 menu-pesquisa-content">
+                  <form class="row g-3 form">
+                     <div class="col-auto form-icon-pesquisa">
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="bi bi-search"></i></span>
+                           <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                     </div>
+                     <div class="col-auto" id="fechar-menu-pesquisa">
+                        <span class="btn mb-3"><i class="bi bi-x-lg close-pesquisa" ></i></span>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--MENU HAMBURGUER-->
+      <div class="container-fluid" id="menu-hamburguer" >
+         <div class="container">
+            <div class="row  ">
+               <div class="col-8" id="fechar-menu-hamburguer">
+               </div>
+               <div class="col-3 menu-hamburguer-content">
+                  <div class="list-group menu-hamburguer-center">
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer" aria-current="true">
+                     Visite
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Programação
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Exposições
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Sabina Virtual
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Agendamento de Grupos
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Sobre
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Perguntas frequentes
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Contato
+                     </a>
+                     <a class="nav-link menu-icon" href=""><i class="bi bi-search"></i></a>
+                     <a class="btn btn-primary btn-ticket btn-full" href="#" role="button">
+                     Ingressos <i class="bi bi-ticket"></i>
+                     </a>
+                     <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade" href="" >Acessibilidade <img src="assets/img/icon-arroe-right.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-1" id="fechar-menu-hamburguer">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--SLIDE-->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+         <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="10000">
+               <div class="gradiente">
+                  <img src="assets/img/bg-visite.png" class="d-block w-100" alt="...">
+               </div>
+               <div class="carousel-caption d-md-flex ">
+                  <h5 class="text text-acessibilidade">
+                     Visite a Sabina
+                  </h5>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--ATENDIMENTO AO PUBLICO-->
+      <div class="container-full">
+         <div class="container text-titulo">
+            <p>
+               Visite a Sabina
+            </p>
+            <h2 id="txt-titulo-atendimento-ao-publico">
+               Atendimento ao público e grupos
+            </h2>
+            <div class="row ">
+               <div class="col-1 ">
+                  <img src="assets/img/people.png" alt="">
+               </div>
+               <div class="col-7 " id="atendimento-content-dir">
+                  <span id="atendimento">Atendimento ao Público</span>
+                  <span id="descricao">
+                  <span class="bolder">Sábados, domingos e feriados</span> - das 9h30 as 17h30 (Bilheteria das
+                  9h30 as 16h30).
+                  <a class="btn btn-primary btn-full" href="#" role="button">
+                  Comprar ingresso <i class="bi bi-ticket"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="row espaco-acima-50">
+               <div class="col-1 ">
+                  <img src="assets/img/icon-home.png" alt="">
+               </div>
+               <div class="col-7 " id="atendimento-content-dir">
+                  <span id="atendimento">Atendimento a Grupos</span>
+                  <span id="descricao">
+                  <span class="bolder"> De terça a sexta-feira </span>- das 8h as 17h.<br>Atendimento para grupos
+                  escolares e filantrópicos, mediante agendamento prévio.
+                  <a class="btn btn-primary btn-full btn-mais-informacoes" href="#" role="button">
+                  Mais informações <img src="assets/img/icon-btn-people.png" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="row espaco-acima-50 espaco-abaixo-50">
+               <div class="col-1 ">
+                  <img src="assets/img/icon-infor.png" alt="">
+               </div>
+               <div class="col-7 " id="atendimento-content-dir">
+                  <span id="descricao ">
+                  <span class="bolder">Segundas-feiras </span>- Fechado para manutenção e expediente
+                  administrativo.
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--COMO COMPRAR INGRESSOS-->
+      <div class="container-full como-comprar-ingressos">
+         <div class="container text-titulo">
+            <p class="txt-ingressos">
+               Ingressos
+            </p>
+            <h2 class="txt-ingressos-titulo">
+               Como comprar ingressos
+            </h2>
+            <div class="row ">
+               <div class="col-1 ">
+                  <img src="assets/img/icon-qr.png" alt="">
+               </div>
+               <div class="col-11" id="atendimento-content-dir">
+                  <span id="atendimento" class="text-light">Compre ingressos pelo Site</span>
+                  <span id="descricao">
+                  <span class="text-light">Você pode comprar os ingressos pelo site. O pagamento é realizado
+                  somente via pix, e após a confirmação do pagamento, você receberá um QR code por
+                  email.</span><br>
+                  <a class="btn btn-primary btn-full" href="#" role="button">
+                  Quero comprar ingresso <img src="assets/img/icone-ingressos-como-comprar.png" alt=""
+                     width="20">
+                  </a>
+               </div>
+            </div>
+            <div class="row espaco-acima-50">
+               <div class="col-1 ">
+                  <img src="assets/img/icone-ingressos-como-comprar.png" alt="">
+               </div>
+               <div class="col-7 " id="atendimento-content-dir">
+                  <span id="atendimento" class="text-light">Compre ingressos na Bilheteria</span>
+                  <span id="descricao" class="text-light">
+                  É possível comprar ingressos diretamente na bilheteria da Sabina.
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--TIPOS DE INGRESSOS-->
+      <div class="container-full tipos-ingressos bg-dark">
+         <div class="container text-titulo ">
+            <p class="txt-ingressos tipo">
+               Ingressos
+            </p>
+            <h2 class="txt-ingressos-titulo text-dark">
+               Tipos de ingressos
+            </h2>
+            <div class="row ">
+               <div class="col-1 ">
+                  <img src="assets/img/icon-meia.png" alt="">
+               </div>
+               <div class="col-11" id="atendimento-content-dir">
+                  <span id="atendimento" class="text-dark">Inteira</span>
+                  <span id="descricao">
+                  <span class="text-dark">A compra de ingressos pode ser realizada online e nas bilheterias do
+                  Parque.
+                  </span><br>
+               </div>
+            </div>
+            <br><br>
+            <div class="row ">
+               <div class="col-1 ">
+                  <img src="assets/img/icon-gratis.png" alt="">
+               </div>
+               <div class="col-11" id="atendimento-content-dir">
+                  <span id="atendimento" class="text-dark">Grátis</span>
+                  <span id="descricao">
+                  <span class="text-dark">Alunos das escolas municipais e estaduais de Santo André, professores
+                  das escolas municipais de Santo André, crianças de 0 a 5 anos e pessoas com deficiência.
+                  </span><br>
+               </div>
+            </div>
+            <br><br>
+            <div class="row ">
+               <div class="col-1 ">
+                  <img src="assets/img/icon-gratis.png" alt="">
+               </div>
+               <div class="col-11" id="atendimento-content-dir">
+                  <span id="atendimento" class="text-dark">Meia entrada</span>
+                  <span id="descricao">
+                  <span class="text-dark">Mediante comprovação, crianças de 6 a 12 anos, estudantes, professores,
+                  servidores públicos andreenses, aposentados e idosos acima de 60 anos.
+                  </span><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--VALORES DOS INGRESSOS-->
+      <div class="container-full valores-dos-ingressos">
+         <div class="container text-titulo">
+            <h2 class="txt-ingressos-titulo text-dark">
+               Valores dos ingressos
+            </h2>
+            <div class="row ">
+               <div class="col-4" id="valores-dos-ingressos-content-dir">
+                  <span class="tipo-de-ingresso-titulo">Sabina<br></span>
+                  <span class="tipo-de-ingresso-descricao">
+                  O ingresso Sabina inclui uma diária no parque e acesso livre a todas as exposições.
+                  </span>
+                  <br>
+                  <a class="btn btn-primary btn-full" href="#" role="button">
+                  Comprar ingresso <img src="assets/img/icone-ingressos-como-comprar.png" alt="" width="20">
+                  </a>
+                  <p class="price">
+                     <span>R$ 20,00</span> / Inteira
+                  </p>
+                  <p class="price">
+                     <span>R$ 10,00</span> / Meia Entrada
+                  </p>
+                  <p class="txt-o-que-ta-incluso">
+                     O QUE ESTÁ INCLUSO
+                  </p>
+                  <hr class="line">
+                  <ul class="list-group">
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Todas as Exposições.
+                     </li>
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Toda a Programação.
+                     </li>
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Acesso ao Aquário.
+                     </li>
+                     <li class="list-group-item">
+                        <i class="bi bi-x-circle-fill"></i> Acesso ao Planetário.
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-4" id="valores-dos-ingressos-content-dir">
+                  <span class="tipo-de-ingresso-titulo">Sabina <br>+ 1 sessão Planetário</span>
+                  <span class="tipo-de-ingresso-descricao">
+                  Os ingressos Sabina inclui uma diária no parque, acesso livre e uma entrada para o Planetário.
+                  </span>
+                  <br>
+                  <a class="btn btn-primary btn-full" href="#" role="button">
+                  Comprar ingresso <img src="assets/img/icone-ingressos-como-comprar.png" alt="" width="20">
+                  </a>
+                  <p class="price">
+                     <span>R$ 30,00</span> / Inteira
+                  </p>
+                  <p class="price">
+                     <span>R$ 15,00</span> / Meia Entrada
+                  </p>
+                  <p class="txt-o-que-ta-incluso">
+                     O QUE ESTÁ INCLUSO
+                  </p>
+                  <hr class="line">
+                  <ul class="list-group">
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Todas as Exposições.
+                     </li>
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Toda a Programação.
+                     </li>
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Acesso ao Aquário.
+                     </li>
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Uma sessão no Planetário.
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-4" id="valores-dos-ingressos-content-dir-last">
+                  <span class="tipo-de-ingresso-titulo">Sabina <br>+ 2 sessões Planetário</span>
+                  <span class="tipo-de-ingresso-descricao">
+                  O ingresso Sabina inclui uma diária no parque, acesso livre e duas entradas para o Planetário.
+                  </span>
+                  <br>
+                  <a class="btn btn-primary btn-full" href="#" role="button">
+                  Comprar ingresso <img src="assets/img/icone-ingressos-como-comprar.png" alt="" width="20">
+                  </a>
+                  <p class="price">
+                     <span>R$ 40,00</span> / Inteira
+                  </p>
+                  <p class="price">
+                     <span>R$ 20,00</span> / Meia Entrada
+                  </p>
+                  <p class="txt-o-que-ta-incluso">
+                     O QUE ESTÁ INCLUSO
+                  </p>
+                  <hr class="line">
+                  <ul class="list-group">
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Todas as Exposições.
+                     </li>
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Toda a Programação.
+                     </li>
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Acesso ao Aquário.
+                     </li>
+                     <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill"></i> Duas sessões no Planetário.
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--ATENDIMENTO-->
+      <div class="container-full bg-atendimento">
+         <div class="container text-atendimento-sub-titulo">
+            <div class="row ">
+               <div class="col-6 atendimento-mobile">
+                  <p>
+                     Visite a Sabina
+                  </p>
+                  <h2 class="txt-atendimento-titulo text-light">
+                     Atendimento
+                  </h2>
+                  <div class="row espaco-acima-20">
+                     <div class="col-1 ">
+                        <img src="assets/img/icon-location.png" alt="">
+                     </div>
+                     <div class="col-11" id="atendimento-icon-titulo">
+                        <span id="atendimento" class="text-light">Endereço</span>
+                        <span id="descricao">
+                        <span class="text-light">R. Juquiá, s/n - Vila Eldizia, Santo André - SP, 09181-730
+                        </span><br>
+                     </div>
+                  </div>
+                  <div class="row espaco-acima-20">
+                     <div class="col-1 ">
+                        <img src="assets/img/icon-msg.png" alt="">
+                     </div>
+                     <div class="col-11" id="atendimento-icon-titulo">
+                        <span id="atendimento" class="text-light">Fale conosco</span>
+                        <span id="descricao">
+                        <span class="text-light">
+                        <strong>Telefone:</strong> (11) 4422-2001
+                        <br>
+                        <strong>Email:</strong> sabina@santoandre.sp.gov.br
+                        </span><br>
+                     </div>
+                  </div>
+                  <div class="row espaco-acima-20">
+                     <div class="col-1 ">
+                        <img src="assets/img/icon-siganos.png" alt="">
+                     </div>
+                     <div class="col-11" id="atendimento-icon-titulo">
+                        <span id="atendimento" class="text-light">Siga nos</span>
+                        <span id="descricao">
+                        <span class="text-light">R. Juquiá, s/n - Vila Eldizia, Santo André - SP, 09181-730
+                        </span><br>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-6 img-mobile">
+                  <img src="assets/img/maps.png" class="img-responsive img-fluid" alt="" srcset="">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--DUVIDAS FREQUENTES-->
+      <div class="container-full bg-cadastre-se">
+         <div class="container">
+            <h2 class="text-cadastre-se-titulo titulo-duvidas-frequentes">
+               Dúvidas frequentes
+            </h2>
+            <button type="submit" class="btn btn-primary mb-3 btn-cadastrar-se btn-duvidas-frequentes">Ver dúvidas frequentes <i
+               class="bi bi-arrow-right-short"></i></button>
+         </div>
+      </div>
+      <!--FOOTER-->
+      <footer class="container-fluid" id="footer">
+         <div class="container">
+            <!--navbar as a link-->
+            <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light">
+               <div class="container">
+                  <div class="row footer-content">
+                     <div class="col-12">
+                        <a class="navbar-brand" href="#" target="_blank" id="brand_name">
+                        <img src="assets/img/logo-footer.png" alt="logo">
+                        </a>
+                     </div>
+                     <div class="col-12" id="nav-toggle-footer">
+                        <div class="  justify-content-start footer-link" id="navLinks">
+                           <div class="navbar-nav">
+                              <a class="nav-link menu-footer" aria-current="page" href="">Viste</a>
+                              <a class="nav-link menu-footer" href="#">Programação</a>
+                              <a class="nav-link menu-footer" href="">Exposição</a>
+                              <a class="nav-link menu-footer" href="">Sabina Virtual</a>
+                              <a class="nav-link menu-footer" href="">Sobre</a>
+                              <a class="nav-link menu-footer" href="">Grupos</a>
+                              <a class="nav-link menu-footer" href="">Contato</a>
+                              <a class="btn btn-primary btn-ticket" href="#" role="button">
+                              Ingressos
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row footer-content2">
+                        <div class="col-4 container-redes">
+                           <ul class="list-group list-group-horizontal">
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-facebook"></i>
+                                 </a>
+                              </li>
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-twitter"></i>
+                                 </a>
+                              </li>
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-instagram"></i>
+                                 </a>
+                              </li>
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-youtube"></i>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-8 container-redes">
+                           <ul class="list-group list-group-horizontal">
+                              <li class="list-group-item txt-footer">
+                                 <a href="#" class="txt-footer-link">
+                                 Políticas de Privacidade
+                                 </a>
+                              </li>
+                              <li class="list-group-item txt-footer">
+                                 @sabina 2022. Todos os direitos reservados.
+                              </li>
+                              <li class="list-group-item txt-footer">
+                                 Desenvolvido por @eitodos
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </footer>
+      <script src="assets/js/scripts.js"></script>
+   </body>
+</html>

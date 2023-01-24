@@ -1,0 +1,333 @@
+@media (max-width: 900px) {
+
+
+	.burger-wrapper {
+		cursor: pointer;
+		margin: auto;
+		width: 50px;
+		height: 40px;
+	}
+
+	.burger-wrapper .hamburger {
+		background: black;
+		width: 50px;
+		height: 5px;
+		position: relative;
+		transition: background 10ms 300ms ease;
+		transform: translateY(20px);
+	}
+
+	.burger-wrapper .hamburger:before,
+	.burger-wrapper .hamburger:after {
+		transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+		position: absolute;
+		background: black;
+		margin-left: -25px;
+		width: 50px;
+		height: 5px;
+		content: "";
+	}
+
+	.burger-wrapper .hamburger:before {
+		top: -15px;
+	}
+
+	.burger-wrapper .hamburger:after {
+		top: 15px;
+	}
+
+	.menu-trigger:checked~.burger-wrapper .hamburger {
+		background: transparent;
+	}
+
+	.menu-trigger:checked~.burger-wrapper .hamburger:after,
+	.menu-trigger:checked~.burger-wrapper .hamburger:before {
+		transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+		top: 0;
+	}
+
+	.menu-trigger:checked~.burger-wrapper .hamburger:before {
+		transform: rotate(45deg);
+	}
+
+	.menu-trigger:checked~.burger-wrapper .hamburger:after {
+		transform: rotate(-45deg);
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.btn-ticket {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+
+	.menu-mobile {
+		text-align: center;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px;
+		/* identical to box height, or 133% */
+
+		display: flex;
+		align-items: center;
+
+		/* Generic/Black */
+
+		color: #000000;
+
+	}
+
+	.menu-top {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.carousel-inner {
+		height: 25vh;
+	}
+
+	.text {
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: 700;
+		color: #FFF;
+		text-align: left;
+		margin-top: -45%;
+		margin-left: 0px;
+		text-align: center;
+	}
+
+
+	.btn-saiba-mais {
+		border: 1px solid #2D9CDB;
+		color: #FFF;
+		padding: 12px 20px;
+		gap: 8px;
+		width: 213px;
+		height: 48px;
+		background: #2D9CDB;
+		border-radius: 30px;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 600;
+		margin-top: 2%;
+		margin-left: 0px;
+	}
+
+	.exposicao-mobile {
+		margin-top: -50px;
+		margin-bottom: 80px;
+
+	}
+
+	.text-exposicoes {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 27px;
+		line-height: 37px;
+		text-align: center;
+		letter-spacing: 0.02em;
+		color: #000000;
+		margin-top: 20px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.esq-ciencia-e-tecnologia,
+	.esq-sala-da-vida,
+	.esq-sala-da-terra,
+	.esq-planetario-e-noc,
+	.esq-espaco {
+		width: 100%;
+		margin-top: -70px;
+	}
+
+	.dir-ciencia-e-tecnologia,
+	.dir-sala-da-vida,
+	.dir-sala-da-terra,
+	.dir-planetario-e-noc,
+	.dir-espaco {
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: auto;
+		height: 434px;
+		display: none;
+	}
+
+	.bg-programacao {
+		margin-top: -70px;
+	}
+
+	.gallery_product {
+		margin-bottom: 70px;
+	}
+
+	.sabina-virtual-mobile {
+		width: 100%;
+	}
+
+	.bloco-abaixo-programacao {
+		margin-top: -5px;
+	}
+
+	.text-block-titulo {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400 !important;
+		;
+		font-size: 30px !important;
+		;
+		line-height: 38px;
+		/* or 145% */
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.02em;
+		/* Generic/White */
+		color: #FFFFFF !important;
+	}
+
+	.btn-content {
+		display: flex;
+		justify-content: center;
+		padding-top: 0px;
+		padding-bottom: 40px;
+	}
+
+	.img-abaixo-conteudo {
+		display: none;
+	}
+
+
+	#atendimento-content-dir {
+		margin-left: 10px !important;
+		width: 70% !important;
+	}
+
+	.btn-full {
+		border: 1px solid #C2387F;
+		color: #FFF;
+		padding: 10px 16px;
+		gap: 6px;
+		width: 100%;
+		height: 48px;
+		background: #C2387F;
+		/* Drop shadow/Small */
+		box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px -1px rgba(16, 24, 40, 0.1);
+		border-radius: 30px;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 600;
+		margin-top: 20px;
+	}
+
+	#atendimento-content-dir {
+		margin-left: 20px !important;
+		width: 80% !important;
+	}
+
+
+	.text-titulo h2 {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 38px;
+		letter-spacing: 0.02em;
+		color: #000000;
+		padding-bottom: 70px;
+	}
+
+	#valores-dos-ingressos-content-dir,
+	#valores-dos-ingressos-content-dir-last {
+		border-bottom: 1px solid #E5E5E5;
+		padding: 50px;
+		width: 100% !important;
+	}
+
+	.atendimento-mobile {
+		width: 100% !important;
+	}
+
+	#atendimento-icon-titulo {
+		margin-left: 40px;
+		margin-top: -40px !important;
+	}
+
+	.img-mobile {
+		width: 100% !important;
+	}
+
+	.text-cadastre-se-titulo {
+		font-size: 25px;
+		line-height: 35px;
+	}
+
+
+	.form-control,
+	.btn-cadastrar-se {
+		width: 100%;
+		height: 48px;
+	}
+
+	.footer-link {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	.container-redes {
+		width: 100% !important;
+	}
+
+	.btn-ticket {
+		width: 90% !important;
+	}
+
+	.navbar-toggler {
+		border: none !important;
+	}
+
+
+	/*pesquisa*/
+
+	#menu-pesquisa {
+		margin-top: 150px !important;
+	}
+
+	.form-icon-pesquisa {
+		width: auto !important;
+	}
+
+
+	/*menu*/
+
+	.menu-hamburguer-acessibilidade {
+		background-color: black;
+		width: 135% !important;
+		height: 75px;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		color: #FFF;
+		border: none !important;
+		margin-left: -12px;
+	}
+
+	.content-contato {
+		width: 100% !important;
+	}
+
+	.form-contato {
+		margin-top: -50px !important;
+		padding-bottom: 30px !important;
+	}
+
+	.mobile-fqa {
+		width: 100% !important;
+	}
+
+}

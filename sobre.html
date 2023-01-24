@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CDN BOOTSTRAP -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!--google font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/mobile.css">
+      <title>Sobre</title>
+   </head>
+   <body class="bg-dark">
+      <!--HEADER-->
+      <div class="container-fluid d-none d-xl-block" id="header-top">
+         <div class="container">
+            <ul class="nav justify-content-end">
+               <li class="nav-item">
+                  <button   class="button nav-link link-top" href="#" id="click-tamanho-fonte">
+                  <img src="assets/img/tamanho-fonte.png" alt="">
+                  Tamanho da fonte
+                  </button>
+               </li>
+               <li class="nav-item">
+                  <a href="acessibilidade.html" class="button nav-link link-top" href="#" id="link-top-acessibilidade">
+                  <img src="assets/img/acessibility.png" alt="">
+                  Acessibilidade
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <button id="toggle" class="button nav-link link-top " href="#">
+                  <img src="assets/img/iconcontrast.png" alt="">
+                  Alto Contraste
+                  </button>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <header class="container-fluid" id="header">
+         <div class="container">
+            <!--navbar as a link-->
+            <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light">
+               <div class="container">
+                  <a class="navbar-brand" href="index.html" id="brand_name">
+                  <img src="assets/img/logo.jpg" alt="logo">
+                  </a>
+                  <!--toggle_button-->
+                  <button class="navbar-toggler" id="navbar-button" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navLinks" aria-controls="navbarNav" aria-expanded="false"
+                     aria-label="Toggle navigation"  >
+                     <input class="menu-trigger hidden" id="togglenav" type="checkbox"/>
+                     <label class="burger-wrapper" for="togglenav">
+                        <div class="hamburger"></div>
+                     </label>
+                  </button>
+                  <!--navbar options/buttons-->
+                  <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+                     <div class="navbar-nav menu-mobile">
+                        <a class="nav-link menu-top" id="menutopvisite"  aria-current="page" href="">Visite</a>
+                        <a class="nav-link menu-top" id="menu-top-sobre" href="#">Programação</a>
+                        <a class="nav-link menu-top" id="menu-top-perguntas" href="">Exposição</a>
+                        <a class="nav-link menu-top" id="menu-top-contato" href="">Sabina Virtual</a>
+                        <!--somente no mobile-->
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Agendamento de Grupos</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Sobre</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Perguntas frequentes</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Contato</a>
+                        <button class="nav-link menu-icon-menu" href="" id="click-menu-pesquisa"><i class="bi bi-search"></i></button>
+                        <button class="nav-link menu-icon-menu d-none d-xl-block" href="" id="click-menu-hamburguer"><i class="bi bi-list"></i></button>
+                        <a class="btn btn-primary btn-ticket" href="#" role="button">
+                        Ingressos <i class="bi bi-ticket"></i>
+                        </a>
+                        <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" href="" > <img src="assets/img/tamanho-fonte.png" alt=""> Tamanho de fonte</button>
+                        <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" href="" > <img src="assets/img/acessibility.png" alt=""> Acessibilidade</button>
+                        <button  id="toggle-mobile" class="button nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" > <img src="assets/img/iconcontrast.png" alt=""> Alto Contraste</button>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!--TAMANHO DA FONTE-->
+      <div class="container-fluid" id="tamanho-fonte">
+         <div class="container">
+            <div class="row">
+               <div class="col-2"></div>
+               <div class="col-8" id="tamanho-fonte-content">
+                  <div class="row  ">
+                     <div class="col-4">
+                        <img src="http://via.placeholder.com/250x500" style="border-radius: 20px; margin-left: -20px ;">
+                     </div>
+                     <div class="col-8">
+                        <h2>Aumentar e Diminuir</h2>
+                        <p class="paragrafo--aumentar-fonte">
+                           Para aumentar ou diminuir a fonte no nosso site,<br>
+                           utilize os seguinte atalhos no seu teclado:
+                        </p>
+                        <div class="paragrafo--aumentar-fonte">
+                           <span class="caixa-tamanho-fonte">Ctrl</span> <span class="caixa-tamanho-fonte">+</span> (Para aumentar)
+                        </div>
+                        <div class="paragrafo--aumentar-fonte">
+                           <span class="caixa-tamanho-fonte">Ctrl</span> <span class="caixa-tamanho-fonte">-</span> (Para diminuir)
+                        </div>
+                        <button class="btn-tamanho-fonte" id="fechar-tamanho-fonte">
+                        FECHAR JANELA
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-2"></div>
+            </div>
+         </div>
+      </div>
+      <!--PESQUISA-->
+      <div class="container-fluid" id="menu-pesquisa">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 menu-pesquisa-content">
+                  <form class="row g-3 form">
+                     <div class="col-auto form-icon-pesquisa">
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="bi bi-search"></i></span>
+                           <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                     </div>
+                     <div class="col-auto" id="fechar-menu-pesquisa">
+                        <span class="btn mb-3"><i class="bi bi-x-lg close-pesquisa" ></i></span>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--MENU HAMBURGUER-->
+      <div class="container-fluid" id="menu-hamburguer" >
+         <div class="container">
+            <div class="row  ">
+               <div class="col-8" id="fechar-menu-hamburguer">
+               </div>
+               <div class="col-3 menu-hamburguer-content">
+                  <div class="list-group menu-hamburguer-center">
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer" aria-current="true">
+                     Visite
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Programação
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Exposições
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Sabina Virtual
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Agendamento de Grupos
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Sobre
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Perguntas frequentes
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Contato
+                     </a>
+                     <a class="nav-link menu-icon" href=""><i class="bi bi-search"></i></a>
+                     <a class="btn btn-primary btn-ticket btn-full" href="#" role="button">
+                     Ingressos <i class="bi bi-ticket"></i>
+                     </a>
+                     <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade" href="" >Acessibilidade <img src="assets/img/icon-arroe-right.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-1" id="fechar-menu-hamburguer">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--SLIDE-->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+         <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="10000">
+               <div class="gradiente">
+                  <img src="assets/img/bg-acessibilidade.png" class="d-block w-100" alt="...">
+               </div>
+               <div class="carousel-caption d-md-flex ">
+                  <h5 class="text text-acessibilidade">
+                     Sobre a Sabina
+                  </h5>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--DETALHES-->
+      <div class="container align-middle bloco-full">
+         <div class="row  ">
+            <div class="col-8">
+               <div class="container bloco">
+                  <h5 class="text-block" id="titulo-detalhes">
+                     Explorar o céu noturno de Santo André<br>e descubra e explore o mundo da tecnologia.
+                  </h5>
+                  <p class="paragrafo-detalhes">
+                     Especialistas que são referências nacionais e mundiais em equidade racial estarão reunidas no Brasil, no próximo dia 30, das 9h30 às 18h, durante o encontro “Filantropia e Equidade Racial: desafios e modos de fazer“. O evento — em formato híbrido [online e presencial] — é promovido pela Rede Temática de Equidade Racial, sob a coordenação do Grupo de Institutos, Fundações e Empresas (GIFE).
+                     O encontro integra as ações do “Mês da Filantropia Negra”/“Black Philanthropy Month (BPM)”. Além do GIFE, a Rede Temática de Equidade Racial é composta por Instituto Unibanco, Instituto Ibirapitanga, Fundação Tide Setubal, Itaú Social, Fundação Roberto Marinho, Open Society Foundation e Ford Foundation. Esta é a segunda edição brasileira do BPM que, este ano, tem como tema “Força — A urgência do agora! Do sonho à ação”.							
+                  </p>
+                  <img src="assets/img/foto-detalhes.png">
+                  <p class="paragrafo-detalhes">
+                     Especialistas que são referências nacionais e mundiais em equidade racial estarão reunidas no Brasil, no próximo dia 30, das 9h30 às 18h, durante o encontro “Filantropia e Equidade Racial: desafios e modos de fazer“. O evento — em formato híbrido [online e presencial]  sob a coordenação do Grupo de Institutos, Fundações e Empresas (GIFE).
+                  </p>
+                  <p class="paragrafo-detalhes">
+                     O encontro integra as ações do “Mês da Filantropia Negra”/“Black Philanthropy Month (BPM)”. Além do GIFE, a Rede Temática de Equidade Racial é composta por Instituto Unibanco, Instituto Ibirapitanga, Fundação Tide Setubal, Itaú Social, Fundação Roberto Marinho, Open Society Foundation e Ford Foundation. Esta é a segunda edição brasileira do BPM que, este ano, tem como tema “Força — A urgência do agora! Do sonho à ação”.
+                  </p>
+                  <img src="assets/img/thumbvideoyoutube.png">
+                  <p class="paragrafo-detalhes">
+                     “Filantropia e Equidade Racial: desafios e modos de fazer“. O evento — em formato híbrido [online e presencial] — é promovido sob a coordenação do Grupo de Institutos, Fundações e Empresas (GIFE).<br>
+                     O encontro integra as ações do “Mês da Filantropia Negra”/“Black Philanthropy Month (BPM)”. Além do GIFE, a Rede Temática de Equidade Racial é composta por Instituto Unibanco.
+                  </p>
+                  <img src="assets/img/foto-detalhes-2.png">
+                  <p class="paragrafo-detalhes">
+                     O encontro integra as ações do “Mês da Filantropia Negra”/“Black Philanthropy Month (BPM)”. Além do GIFE, a Rede Temática de Equidade Racial é composta por Instituto Unibanco, Instituto Ibirapitanga, Fundação Tide Setubal, Itaú Social, Fundação Roberto Marinho, Open Society Foundation e Ford Foundation. Esta é a segunda edição brasileira do BPM que, este ano, tem como tema “Força — A urgência do agora! Do sonho à ação”.
+                  </p>
+                  <h5 class="text-block" id="titulo-detalhes">
+                     Visite também as exposições
+                  </h5>
+               </div>
+            </div>
+            <div class="col-4">
+               <p class="compartilhe-detalhes">COMPARTILHE:</p>
+               <ul class="list-group list-group-horizontal">
+                  <li class="list-group-item fundo-redes">
+                     <a href="#">
+                     <i class="bi bi-facebook"></i>
+                     </a>
+                  </li>
+                  <li class="list-group-item fundo-redes">
+                     <a href="#">
+                     <i class="bi bi-twitter"></i>
+                     </a>
+                  </li>
+                  <li class="list-group-item fundo-redes">
+                     <a href="#">
+                     <i class="bi bi-instagram"></i>
+                     </a>
+                  </li>
+                  <li class="list-group-item fundo-redes">
+                     <a href="#">
+                     <i class="bi bi-youtube"></i>
+                     </a>
+                  </li>
+                  <li class="list-group-item fundo-redes">
+                     <a href="#">
+                     <i class="bi bi-whatsapp"></i>
+                     </a>
+                  </li>
+               </ul>
+               <div class="especialistas-detalhes">
+                  <p>Especialistas que são referências nacionais e mundiais em equidade racial estarão reunidas no Brasil.</p>
+               </div>
+               <div class="especialistas-detalhes2">
+                  <p>Especialistas que são referências nacionais e mundiais em equidade racial estarão reunidas no Brasil, no próximo dia 30, das 9h30 às 18h, durante o encontro.</p>
+               </div>
+               <div class="especialistas-detalhes3">
+                  <p>Especialistas que são referências nacionais e mundiais em equidade racial.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--SALA DA VIDA-->
+      <div class="container align-middle bloco-full">
+         <div class="row  ">
+            <div class="col-7 dir-sala-da-vida">
+            </div>
+            <div class="col-5 esq-sala-da-vida ">
+               <div class="container bloco">
+                  <h5 class="text-block" id="text-sala">
+                     Sala da Vida
+                  </h5>
+                  <p>
+                     Conhecimento científico, artístico, cultural e tecnológico que transcende o ensino formal.
+                  </p>
+                  <a class="btn btn-primary btn-quuero-explorar" href="#" role="button">
+                  Quero saber mais <img src="assets/img/icon-quero-sabermmais-dedo.png" width="20" height="15">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--SALA DA TERRA-->
+      <div class="container align-middle bloco-full">
+         <div class="row  ">
+            <div class="col-5 esq-sala-da-terra ">
+               <div class="container bloco">
+                  <h5 class="text-block" id="text-terra">
+                     Sala da Terra
+                  </h5>
+                  <p>
+                     Conhecimento científico, artístico, cultural e tecnológico que transcende o ensino formal.
+                  </p>
+                  <a class="btn btn-primary btn-quuero-explorar" href="#" role="button">
+                  Quero descobrir <img src="assets/img/icon-brn-sala-da-terra.png" width="20" height="15">
+                  </a>
+               </div>
+            </div>
+            <div class="col-7 dir-sala-da-terra">
+            </div>
+         </div>
+      </div>
+      <!--PLANETARIO E NOC-->
+      <div class="container align-middle bloco-full">
+         <div class="row  ">
+            <div class="col-7 dir-planetario-e-noc">
+            </div>
+            <div class="col-5 esq-planetario-e-noc ">
+               <div class="container bloco">
+                  <h5 class="text-block" id="text-plenario">
+                     Planetário e NOC
+                  </h5>
+                  <p>
+                     Conhecimento científico, artístico, cultural e tecnológico que transcende o ensino formal.
+                  </p>
+                  <a class="btn btn-primary btn-quuero-explorar" href="#" role="button">
+                  Quero saber mais <img src="assets/img/icon-planetario.png" width="20" height="15">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--ESPACO VIVENCIAL-->
+      <div class="container align-middle bloco-full">
+         <div class="row ">
+            <div class="col-5 esq-espaco ">
+               <div class="container bloco">
+                  <h5 class="text-block" id="text-espaco">
+                     Espaço vivencial de Mobilidade
+                  </h5>
+                  <p>
+                     -++
+                  </p>
+                  <a class="btn btn-primary btn-quuero-explorar" href="#" role="button">
+                  Quero descobrir <img src="assets/img/icon-brn-sala-da-terra.png" width="20" height="15">
+                  </a>
+               </div>
+            </div>
+            <div class="col-7 dir-espaco">
+            </div>
+         </div>
+      </div>
+      <!--FOOTER-->
+      <footer class="container-fluid" id="footer">
+         <div class="container">
+            <!--navbar as a link-->
+            <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light">
+               <div class="container">
+                  <div class="row footer-content">
+                     <div class="col-12">
+                        <a class="navbar-brand" href="#" target="_blank" id="brand_name">
+                        <img src="assets/img/logo-footer.png" alt="logo">
+                        </a>
+                     </div>
+                     <div class="col-12" id="nav-toggle-footer">
+                        <div class="  justify-content-start footer-link" id="navLinks">
+                           <div class="navbar-nav">
+                              <a class="nav-link menu-footer" aria-current="page" href="">Viste</a>
+                              <a class="nav-link menu-footer" href="#">Programação</a>
+                              <a class="nav-link menu-footer" href="">Exposição</a>
+                              <a class="nav-link menu-footer" href="">Sabina Virtual</a>
+                              <a class="nav-link menu-footer" href="">Sobre</a>
+                              <a class="nav-link menu-footer" href="">Grupos</a>
+                              <a class="nav-link menu-footer" href="">Contato</a>
+                              <a class="btn btn-primary btn-ticket" href="#" role="button">
+                              Ingressos
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row footer-content2">
+                        <div class="col-4 container-redes">
+                           <ul class="list-group list-group-horizontal">
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-facebook"></i>
+                                 </a>
+                              </li>
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-twitter"></i>
+                                 </a>
+                              </li>
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-instagram"></i>
+                                 </a>
+                              </li>
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-youtube"></i>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-8 container-redes">
+                           <ul class="list-group list-group-horizontal">
+                              <li class="list-group-item txt-footer">
+                                 <a href="#" class="txt-footer-link">
+                                 Políticas de Privacidade
+                                 </a>
+                              </li>
+                              <li class="list-group-item txt-footer">
+                                 @sabina 2022. Todos os direitos reservados.
+                              </li>
+                              <li class="list-group-item txt-footer">
+                                 Desenvolvido por @eitodos
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </footer>
+      <script src="assets/js/scripts.js"></script>
+   </body>
+</html>

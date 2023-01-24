@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CDN BOOTSTRAP -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!--google font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/mobile.css">
+      <title>Programacao list</title>
+   </head>
+   <body class="bg-dark">
+      <!--HEADER-->
+      <div class="container-fluid d-none d-xl-block" id="header-top">
+         <div class="container">
+            <ul class="nav justify-content-end">
+               <li class="nav-item">
+                  <button   class="button nav-link link-top" href="#" id="click-tamanho-fonte">
+                  <img src="assets/img/tamanho-fonte.png" alt="">
+                  Tamanho da fonte
+                  </button>
+               </li>
+               <li class="nav-item">
+                  <a href="acessibilidade.html" class="button nav-link link-top" href="#" id="link-top-acessibilidade">
+                  <img src="assets/img/acessibility.png" alt="">
+                  Acessibilidade
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <button id="toggle" class="button nav-link link-top " href="#">
+                  <img src="assets/img/iconcontrast.png" alt="">
+                  Alto Contraste
+                  </button>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <header class="container-fluid" id="header">
+         <div class="container">
+            <!--navbar as a link-->
+            <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light">
+               <div class="container">
+                  <a class="navbar-brand" href="index.html" id="brand_name">
+                  <img src="assets/img/logo.jpg" alt="logo">
+                  </a>
+                  <!--toggle_button-->
+                  <button class="navbar-toggler" id="navbar-button" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navLinks" aria-controls="navbarNav" aria-expanded="false"
+                     aria-label="Toggle navigation"  >
+                     <input class="menu-trigger hidden" id="togglenav" type="checkbox"/>
+                     <label class="burger-wrapper" for="togglenav">
+                        <div class="hamburger"></div>
+                     </label>
+                  </button>
+                  <!--navbar options/buttons-->
+                  <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+                     <div class="navbar-nav menu-mobile">
+                        <a class="nav-link menu-top" id="menutopvisite"  aria-current="page" href="">Visite</a>
+                        <a class="nav-link menu-top" id="menu-top-sobre" href="#">Programação</a>
+                        <a class="nav-link menu-top" id="menu-top-perguntas" href="">Exposição</a>
+                        <a class="nav-link menu-top" id="menu-top-contato" href="">Sabina Virtual</a>
+                        <!--somente no mobile-->
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Agendamento de Grupos</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Sobre</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Perguntas frequentes</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Contato</a>
+                        <button class="nav-link menu-icon-menu" href="" id="click-menu-pesquisa"><i class="bi bi-search"></i></button>
+                        <button class="nav-link menu-icon-menu d-none d-xl-block" href="" id="click-menu-hamburguer"><i class="bi bi-list"></i></button>
+                        <a class="btn btn-primary btn-ticket" href="#" role="button">
+                        Ingressos <i class="bi bi-ticket"></i>
+                        </a>
+                        <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" href="" > <img src="assets/img/tamanho-fonte.png" alt=""> Tamanho de fonte</button>
+                        <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" href="" > <img src="assets/img/acessibility.png" alt=""> Acessibilidade</button>
+                        <button  id="toggle-mobile" class="button nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" > <img src="assets/img/iconcontrast.png" alt=""> Alto Contraste</button>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!--TAMANHO DA FONTE-->
+      <div class="container-fluid" id="tamanho-fonte">
+         <div class="container">
+            <div class="row">
+               <div class="col-2"></div>
+               <div class="col-8" id="tamanho-fonte-content">
+                  <div class="row  ">
+                     <div class="col-4">
+                        <img src="http://via.placeholder.com/250x500" style="border-radius: 20px; margin-left: -20px ;">
+                     </div>
+                     <div class="col-8">
+                        <h2>Aumentar e Diminuir</h2>
+                        <p class="paragrafo--aumentar-fonte">
+                           Para aumentar ou diminuir a fonte no nosso site,<br>
+                           utilize os seguinte atalhos no seu teclado:
+                        </p>
+                        <div class="paragrafo--aumentar-fonte">
+                           <span class="caixa-tamanho-fonte">Ctrl</span> <span class="caixa-tamanho-fonte">+</span> (Para aumentar)
+                        </div>
+                        <div class="paragrafo--aumentar-fonte">
+                           <span class="caixa-tamanho-fonte">Ctrl</span> <span class="caixa-tamanho-fonte">-</span> (Para diminuir)
+                        </div>
+                        <button class="btn-tamanho-fonte" id="fechar-tamanho-fonte">
+                        FECHAR JANELA
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-2"></div>
+            </div>
+         </div>
+      </div>
+      <!--PESQUISA-->
+      <div class="container-fluid" id="menu-pesquisa">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 menu-pesquisa-content">
+                  <form class="row g-3 form">
+                     <div class="col-auto form-icon-pesquisa">
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="bi bi-search"></i></span>
+                           <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                     </div>
+                     <div class="col-auto" id="fechar-menu-pesquisa">
+                        <span class="btn mb-3"><i class="bi bi-x-lg close-pesquisa" ></i></span>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--MENU HAMBURGUER-->
+      <div class="container-fluid" id="menu-hamburguer" >
+         <div class="container">
+            <div class="row  ">
+               <div class="col-8" id="fechar-menu-hamburguer">
+               </div>
+               <div class="col-3 menu-hamburguer-content">
+                  <div class="list-group menu-hamburguer-center">
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer" aria-current="true">
+                     Visite
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Programação
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Exposições
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Sabina Virtual
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Agendamento de Grupos
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Sobre
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Perguntas frequentes
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Contato
+                     </a>
+                     <a class="nav-link menu-icon" href=""><i class="bi bi-search"></i></a>
+                     <a class="btn btn-primary btn-ticket btn-full" href="#" role="button">
+                     Ingressos <i class="bi bi-ticket"></i>
+                     </a>
+                     <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade" href="" >Acessibilidade <img src="assets/img/icon-arroe-right.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-1" id="fechar-menu-hamburguer">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--SLIDE-->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+         <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="10000">
+               <div class="gradiente">
+                  <img src="assets/img/programacao-bg.png" class="d-block w-100" alt="...">
+               </div>
+               <div class="carousel-caption d-md-flex ">
+                  <h5 class="text text-acessibilidade">
+                     Programação
+                  </h5>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--ESPACO PROGRAMACAO QUE ACONTECE NA SABINA-->
+      <div class="container-full bg-programacao bg-dark">
+         <div class="container">
+            <p>Programação</p>
+            <h2 id="programacao-titulo-txt">A programação que acontece na Sabina</h2>
+            <div align="left">
+               <p class="filtrar">Filtrar a programação:</p>
+               <button class="btn btn-default filter-button text-junho" data-filter="Junho">Junho <i
+                  class="bi bi-plus-circle"></i></button>
+               <button class="btn btn-default filter-button text-agosto" data-filter="Agosto">Agosto <i
+                  class="bi bi-plus-circle"></i></button>
+               <button class="btn btn-default filter-button text-setembro" data-filter="Setembro">Setembro <i
+                  class="bi bi-plus-circle"></i></button>
+               <button class="btn btn-default filter-button text-outubro" data-filter="Outubro">Outubro <i
+                  class="bi bi-plus-circle"></i></button>
+               <button class="btn btn-default filter-button text-tudo" data-filter="all">Ver toda a programação <i
+                  class="bi bi-plus-circle"></i></button>
+            </div>
+         </div>
+      </div>
+      <div class="container-full bg-programacao-content">
+         <div class="container">
+            <div class="container ">
+               <div class="row ">
+                  <br />
+                  <div class="gallery_product  col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Junho">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Agosto">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Setembro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Outubro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Outubro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Outubro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Outubro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Outubro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Outubro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Outubro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Outubro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter Outubro">
+                     <div class="card">
+                        <img src="assets/img/programacao-img1.png" class="card-img-top img-responsive" alt="...">
+                        <div class="card-body">
+                           <p>De 04/06 até 15/09</p>
+                           <h5 class="card-title">Aprenda ciências nas férias de verão</h5>
+                           <p class="card-text">Conhecimento científico, artístico, cultural e tecnológico que
+                              transcende o ensino formal.
+                           </p>
+                           <a class="btn btn-primary btn-quuero-sabermais" href="#" role="button">
+                           Quero saber mais <img src="assets/img/icon-lampada.png" width="20" height="15">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="btn-content">
+                  <a class="btn btn-primary btn-exposicao" href="#" role="button">
+                  Ver toda a programação <img src="assets/img/icon-brn-sala-da-terra.png" width="20" height="20"
+                     alt="">
+                  </a>
+               </div>
+            </div>
+            </section>
+         </div>
+      </div>
+      <!--FOOTER-->
+      <footer class="container-fluid" id="footer">
+         <div class="container">
+            <!--navbar as a link-->
+            <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light">
+               <div class="container">
+                  <div class="row footer-content">
+                     <div class="col-12">
+                        <a class="navbar-brand" href="#" target="_blank" id="brand_name">
+                        <img src="assets/img/logo-footer.png" alt="logo">
+                        </a>
+                     </div>
+                     <div class="col-12" id="nav-toggle-footer">
+                        <div class="  justify-content-start footer-link" id="navLinks">
+                           <div class="navbar-nav">
+                              <a class="nav-link menu-footer" aria-current="page" href="">Viste</a>
+                              <a class="nav-link menu-footer" href="#">Programação</a>
+                              <a class="nav-link menu-footer" href="">Exposição</a>
+                              <a class="nav-link menu-footer" href="">Sabina Virtual</a>
+                              <a class="nav-link menu-footer" href="">Sobre</a>
+                              <a class="nav-link menu-footer" href="">Grupos</a>
+                              <a class="nav-link menu-footer" href="">Contato</a>
+                              <a class="btn btn-primary btn-ticket" href="#" role="button">
+                              Ingressos
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row footer-content2">
+                        <div class="col-4 container-redes">
+                           <ul class="list-group list-group-horizontal">
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-facebook"></i>
+                                 </a>
+                              </li>
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-twitter"></i>
+                                 </a>
+                              </li>
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-instagram"></i>
+                                 </a>
+                              </li>
+                              <li class="list-group-item fundo-redes">
+                                 <a href="#">
+                                 <i class="bi bi-youtube"></i>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-8 container-redes">
+                           <ul class="list-group list-group-horizontal">
+                              <li class="list-group-item txt-footer">
+                                 <a href="#" class="txt-footer-link">
+                                 Políticas de Privacidade
+                                 </a>
+                              </li>
+                              <li class="list-group-item txt-footer">
+                                 @sabina 2022. Todos os direitos reservados.
+                              </li>
+                              <li class="list-group-item txt-footer">
+                                 Desenvolvido por @eitodos
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </footer>
+      <script src="assets/js/scripts.js"></script>
+   </body>
+</html>

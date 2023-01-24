@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CDN BOOTSTRAP -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!--google font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/mobile.css">
+      <title>Acessibilidade - Homepage</title>
+   </head>
+   <body class="bg-acessibilidade">
+      <!--HEADER-->
+      <div class="container-fluid d-none d-xl-block" id="header-top">
+         <div class="container">
+            <ul class="nav justify-content-end">
+               <li class="nav-item">
+                  <button   class="button nav-link link-top" href="#">
+                  <img src="assets/img/tamanho-fonte.png" alt="">
+                  Tamanho da fonte
+                  </button>
+               </li>
+               <li class="nav-item">
+                  <button   class="button nav-link link-top" href="#">
+                  <img src="assets/img/acessibility.png" alt="">
+                  Acessibilidade
+                  </button>
+               </li>
+               <li class="nav-item">
+                  <button id="toggle" class="button nav-link link-top" href="#">
+                  <img src="assets/img/iconcontrast.png" alt="">
+                  Alto Contraste
+                  </button>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <header class="container-fluid" id="header">
+         <div class="container">
+            <!--navbar as a link-->
+            <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light">
+               <div class="container">
+                  <a class="navbar-brand" href="#" id="brand_name">
+                  <img src="assets/img/logo.jpg" alt="logo">
+                  </a>
+                  <!--toggle_button-->
+                  <button class="navbar-toggler" id="navbar-button" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navLinks" aria-controls="navbarNav" aria-expanded="false"
+                     aria-label="Toggle navigation"  >
+                     <input class="menu-trigger hidden" id="togglenav" type="checkbox"/>
+                     <label class="burger-wrapper" for="togglenav">
+                        <div class="hamburger"></div>
+                     </label>
+                  </button>
+                  <!--navbar options/buttons-->
+                  <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+                     <div class="navbar-nav menu-mobile">
+                        <a class="nav-link menu-top" aria-current="page" href="">Visite</a>
+                        <a class="nav-link menu-top" href="#">Programação</a>
+                        <a class="nav-link menu-top" href="">Exposição</a>
+                        <a class="nav-link menu-top" href="">Sabina Virtual</a>
+                        <!--somente no mobile-->
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Agendamento de Grupos</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Sobre</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Perguntas frequentes</a>
+                        <a class="nav-link menu-top d-block d-sm-none" href="">Contato</a>
+                        <button class="nav-link menu-icon-menu" href="" id="click-menu-pesquisa"><i class="bi bi-search"></i></button>
+                        <button class="nav-link menu-icon-menu d-none d-xl-block" href="" id="click-menu-hamburguer"><i class="bi bi-list"></i></button>
+                        <a class="btn btn-primary btn-ticket" href="#" role="button">
+                        Ingressos <i class="bi bi-ticket"></i>
+                        </a>
+                        <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" href="" > <img src="assets/img/tamanho-fonte.png" alt=""> Tamanho de fonte</button>
+                        <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" href="" > <img src="assets/img/acessibility.png" alt=""> Acessibilidade</button>
+                        <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade d-block d-sm-none" href="" > <img src="assets/img/iconcontrast.png" alt=""> Alto Contraste</button>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!--PESQUISA-->
+      <div class="container-fluid" id="menu-pesquisa">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 menu-pesquisa-content">
+                  <form class="row g-3 form">
+                     <div class="col-auto form-icon-pesquisa">
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="bi bi-search"></i></span>
+                           <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                     </div>
+                     <div class="col-auto" id="fechar-menu-pesquisa">
+                        <span class="btn mb-3"><i class="bi bi-x-lg close-pesquisa" ></i></span>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--MENU HAMBURGUER-->
+      <div class="container-fluid" id="menu-hamburguer" >
+         <div class="container">
+            <div class="row  ">
+               <div class="col-8" id="fechar-menu-hamburguer">
+               </div>
+               <div class="col-3 menu-hamburguer-content">
+                  <div class="list-group menu-hamburguer-center">
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer" aria-current="true">
+                     Visite
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Programação
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Exposições
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Sabina Virtual
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Agendamento de Grupos
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Sobre
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Perguntas frequentes
+                     </a>
+                     <a href="#" class="list-group-item list-group-item-action link-menu-hamburguer">
+                     Contato
+                     </a>
+                     <a class="nav-link menu-icon" href=""><i class="bi bi-search"></i></a>
+                     <a class="btn btn-primary btn-ticket btn-full" href="#" role="button">
+                     Ingressos <i class="bi bi-ticket"></i>
+                     </a>
+                     <button class="nav-link menu-icon-menu menu-hamburguer-acessibilidade" href="" >Acessibilidade <img src="assets/img/icon-arroe-right.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-1" id="fechar-menu-hamburguer">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--SLIDE-->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+         <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="10000">
+               <div class="gradiente">
+                  <img src="assets/img/bg-acessibilidade.png" class="d-block w-100" alt="...">
+               </div>
+               <div class="carousel-caption d-md-flex ">
+                  <h5 class="text text-acessibilidade">
+                     Acessibilidade
+                  </h5>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" id="breadcrumb">
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item active" aria-current="page">Home</li>
+               <li class="breadcrumb-item active" aria-current="page">Acessibilidade</li>
+            </ol>
+         </nav>
+      </div>
+      <div class="container exposicao-mobile">
+         <h2 class="text-exposicoes text-acessibilidade-esq">
+            Acessibilidade
+         </h2>
+      </div>
+      <div class="container align-middle bloco-full">
+         <div class="row  ">
+            <div class="col-5 ">
+               <img src="https://via.placeholder.com/250" >
+            </div>
+            <div class="col-7 ">
+               <p class="texto-preto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem earum dolorem sequi, quis a excepturi id consequuntur, optio rerum temporibus ratione explicabo laudantium! Neque repellendus modi sapiente iure. Mollitia.</p>
+               <p class="texto-preto"><strong>Teclas de atalhos por navegador (Windows / Linux)</strong></p>
+               <p class="texto-preto">"Alt" + "1" - ir para o conteúdo</p>
+               <p class="texto-preto">"Alt" + "2" - ir para o menu</p>
+               <p class="texto-preto">"Alt" + "3" - ir para a busca (caso houver)</p>
+               <p class="texto-preto">"Alt" + "4" - ir para o rodapé</p>
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/scripts.js"></script>
+   </body>
+</html>
